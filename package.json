@@ -1,0 +1,39 @@
+{
+  "name": "meaning-based-search-using-worqhatai",
+  "version": "1.0.0",
+  "description": "Using WorqHat AI to enable Text and Content Based Search for 60K Dataset",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "nodemon index",
+    "build:tailwind:minify": "npx tailwindcss -i ./style/tailwind.css -o ./style/styles.css --minify",
+    "build:tailwind": "npx tailwindcss -i ./style/tailwind.css -o ./style/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WorqHat/Meaning-Based-Search-using-WorqHatAI.git"
+  },
+  "keywords": [
+    "text",
+    "search",
+    "AI",
+    "Content Meaning"
+  ],
+  "author": "WorqHat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WorqHat/Meaning-Based-Search-using-WorqHatAI/issues"
+  },
+  "homepage": "https://github.com/WorqHat/Meaning-Based-Search-using-WorqHatAI#readme",
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.7",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "preline": "^1.9.0",
+    "tailwindcss": "^3.1.8"
+  }
+}

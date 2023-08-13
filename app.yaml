@@ -1,0 +1,20 @@
+runtime: nodejs18 # or another supported version
+
+instance_class: F1
+
+service: context-search-worqhat-ai
+
+handlers:
+- url: /style
+  static_dir: style
+
+- url: /javascript
+  static_dir: javascript
+
+- url: /resources
+  static_dir: resources
+
+- url: /.*
+  secure: always
+  redirect_http_response_code: 301
+  script: auto
