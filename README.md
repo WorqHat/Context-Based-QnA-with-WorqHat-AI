@@ -1,1 +1,1 @@
-# Context-Based-QnA-with-WorqHat-AI
+# Product-Based-QnA-with-WorqHat-AI
