@@ -2,7 +2,7 @@ runtime: nodejs18 # or another supported version
 
 instance_class: F1
 
-service: context-search-worqhat-ai
+service: product-qna-custom-ai
 
 handlers:
 - url: /style
@@ -10,6 +10,9 @@ handlers:
 
 - url: /javascript
   static_dir: javascript
+
+- url: /fonts
+  static_dir: fonts
 
 - url: /resources
   static_dir: resources
