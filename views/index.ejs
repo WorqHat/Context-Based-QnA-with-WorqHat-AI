@@ -7,8 +7,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WorqHat AI Demos: Run QnA using Fine-Tuned AI Models</title>
     <link href="/style/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
   </head>
 
   <body>
@@ -17,7 +18,7 @@
         <div class="flex items-center justify-between">
           <a class="flex-none text-xl font-semibold inline-flex justify-center items-center" href="#" aria-label="Brand">
             <img src="/resources/WorqHat TM Logo.png" class="max-h-11 mr-3" alt="WorqHat Logo">
-            <span class="text-xl">WorqHat AI Meaning Based Search Demo</span></a>
+            <span class="text-xl">Run QnA using Fine-Tuned AI Models</span></a>
           <div class="sm:hidden">
             <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm" data-hs-collapse="#navbar-collapse-with-animation" aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
               <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -34,7 +35,7 @@
             <a class="font-medium text-blue-600 sm:py-6" href="https://worqhat.com/worqhat-ai" aria-current="page">
               About WorqHat AI
             </a>
-            <a class="font-medium text-gray-500 hover:text-gray-400 sm:py-6" href="https://github.com/WorqHat/Meaning-Based-Search-using-WorqHatAI">Code</a>
+            <a class="font-medium text-gray-500 hover:text-gray-400 sm:py-6" href="https://github.com/WorqHat/Product-Based-QnA-with-WorqHat-AI">Code</a>
             <a class="font-medium text-gray-500 hover:text-gray-400 sm:py-6" href="#">Blog</a>
             <a class="font-medium text-gray-500 hover:text-gray-400 sm:py-6" href="https://worqhat.com/contact-us">Talk with Us</a>
             <a class="font-medium text-gray-500 hover:text-gray-400 sm:py-6" href="https://docs.worqhat.com/ai-models/ai-for-search/search-v3">Docs</a>
@@ -48,27 +49,27 @@
     <div class="relative overflow-hidden">
       <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-10 sm:pt-24">
         <div class="text-center">
-          <h1 class="text-4xl sm:text-6xl font-bold text-gray-800">
-            AI Search-as-you-Think Demo
+          <h1 class="text-3xl sm:text-5xl font-bold text-gray-800">
+            Product QnA using No-Code Fine-Tuned AI Models
           </h1>
 
-          <p class="mt-3 text-gray-600 max-w-8xl mx-auto text-lg">
-            WorqHat Search V3 AI understands intent. So whatever your customers search — exact terms or free-form expressions — they can find what they’re looking for.
+          <p class="mt-6 text-gray-600 max-w-8xl mx-auto text-lg">
+            WorqHat AI helps developers Fine-Tune AI Models using No-Code UI. You can just focus on your data and we take care of training your data, building your backend architecture, and deploying to scalable endpoints.
             <br>
             <br>
-            This demo uses the built in Search capabilities of WorqHat AI Enterprise alongside a No-Code Interface to create a Search-as-you-Think Experience for your users. This is a great way to enable your users to find the most relevant results even with errors. So it's now time to Say goodbye to zero results searches
+            Go ahead and make it easier for your customers to find the right products by asking questions in natural language by using AI Models that are trained on your product data. You can also help your Sales Reps answer Client Questions faster.
             <br>
             <br>
-            WorqHat Search V3 AI uses advanced Machine Learning Processes that maps the user's intent to the most relevant results. This is done by using the latest in Natural Language Processing and Deep Learning to understand the meaning of the user's search query.
+            Go from Zero to Production in less than 5 minutes. No Code. No Infrastructure. No DevOps. No ML Engineers. No Data Scientists. No Worries. We do it all for you. You just focus on your data and we take care of the rest.
           </p>
 
-          <div class="mt-7 sm:mt-12 mx-auto max-w-xl relative">
+          <div class="mt-7 sm:mt-12 mx-auto max-w-3xl relative">
             <!-- Form -->
             <div>
               <div class="relative z-10 flex space-x-3 p-3 bg-white border rounded-lg shadow-lg shadow-gray-100">
                 <div class="flex-[1_0_0%]">
-                  <label for="hs-search-article-1" class="block text-sm text-gray-700 font-medium dark:text-white"><span class="sr-only">Search Movies</span></label>
-                  <input type="search" name="searchMovies" id="searchMovies" class="p-3 block w-full border-transparent rounded-md focus:border-blue-500 focus:ring-blue-500" placeholder="Search Movies">
+                  <label for="hs-search-article-1" class="block text-sm text-gray-700 font-medium dark:text-white"><span class="sr-only">Ask a Question</span></label>
+                  <input type="search" name="searchMovies" id="searchMovies" class="p-3 block w-full border-transparent rounded-md focus:border-blue-500 focus:ring-blue-500" placeholder="Ask a Question">
                 </div>
                 <div class="flex-[0_0_auto]">
                   <button class="p-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all text-sm" id="searchButton">
@@ -83,10 +84,10 @@
 
             <div class="mt-4">
               <div class="m-1 py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm searchElement">
-                Show me some Action Movies for Kids
+                I am looking for a Happy Happy movie
               </div>
               <div class="m-1 py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm searchElement">
-                Suggest me some Sci-Fi Movies
+                Suggest me some Sci-Fi Movies to watch as a Family
               </div>
               <div class="m-1 py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm searchElement">
                 What was that movie about Racing Cartoon Cars?
@@ -97,13 +98,74 @@
       </div>
     </div>
     <!-- End Hero -->
-    <p class="text-xl font-bold text-gray-800 mt-5 mb-3 mx-6"><span id="counter">51344</span> Movies Found</p>
-    <div id="movieGrid" class="w-full grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 movieGrid gap-4 px-3">
 
-    </div>
+
+    <section class="relative flex items-center w-full bg-white">
+      <div class="relative items-center w-full px-5 py-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
+        <div class="relative flex-col items-start m-auto align-middle">
+          <div class="grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-10">
+            <div class="relative items-center gap-12 m-auto lg:inline-flex">
+              <div class="max-w-3xl text-center lg:text-left">
+                <div>
+
+                  <p class="max-w-3xl mt-4 text-xl text-gray-600 responseText" id="searchResults">
+                    Hey there! I am WorqBot, your friendly AI Assistant. I am here to help you find the most relevant results for your search query. I am powered by WorqHat AI Search V3. I am trained on a dataset of 1000+ Movies and their attributes. I can understand your intent and find the most relevant results for your search query. I can also understand your intent even if you make a spelling mistake or a typo. So go ahead and ask me a question. I am here to help you.
+                  </p>
+
+
+                  <div role="status" class="space-y-2.5 animate-pulse max-w-full hidden" id="searchLoader">
+                    <div class="flex items-center w-full space-x-2">
+                      <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-32"></div>
+                      <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24"></div>
+                      <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
+                    </div>
+                    <div class="flex items-center w-full space-x-2 max-w-[480px]">
+                      <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-full"></div>
+                      <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
+                      <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24"></div>
+                    </div>
+                    <div class="flex items-center w-full space-x-2 max-w-[400px]">
+                      <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
+                      <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-80"></div>
+                      <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
+                    </div>
+                    <div class="flex items-center w-full space-x-2 max-w-[480px]">
+                      <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-full"></div>
+                      <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
+                      <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24"></div>
+                    </div>
+                    <div class="flex items-center w-full space-x-2 max-w-[440px]">
+                      <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-32"></div>
+                      <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24"></div>
+                      <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-full"></div>
+                    </div>
+                    <div class="flex items-center w-full space-x-2 max-w-[360px]">
+                      <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
+                      <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-80"></div>
+                      <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-full"></div>
+                    </div>
+                    <span class="sr-only">Loading...</span>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="order-first block w-full mt-12 aspect-square lg:mt-0 lg:order-first">
+              <img class="object-cover object-center w-3/4 mx-auto bg-gray-300 lg:ml-auto" alt="hero" src="/resources/worqbot_white.gif">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
 
   </body>
-  <script src="/javascript/sample data.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
   <script src="/javascript/index.js"></script>
+
 
 </html>

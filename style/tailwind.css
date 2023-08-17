@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Change the font of all P tags to Mono in ttf files */
+
+@font-face {
+  font-family: 'Jetbrains';
+  src: url('../fonts/JetBrainsMono-Bold.ttf') format('truetype');
+}
+
+p.responseText {
+  font-family: 'Jetbrains';
+}
