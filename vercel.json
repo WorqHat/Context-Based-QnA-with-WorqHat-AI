@@ -1,6 +1,27 @@
 {
+    "version": 2,
     "builds": [
-      { "src": "index.js", "use": "@vercel/node" }
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "./style/tailwind.css",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*).css",
+        "headers": {
+          "cache-control": "public, max-age=86400"
+        },
+        "dest": "/style/styles.css"
+      },
+      {
+        "src": "/.*",
+        "dest": "index.js"
+      }
     ]
   }
   
