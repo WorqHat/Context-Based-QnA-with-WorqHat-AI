@@ -20,6 +20,7 @@ app.use(urlencodedParser);
 app.use(jsonParser);
 
 app.use("/style", express.static("style"));
+app.use("/fonts", express.static("fonts"));
 app.use("/javascript", express.static("javascript"));
 app.use("/resources", express.static("resources"));
 

@@ -53,16 +53,21 @@ function fetchSearchData(query) {
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === this.DONE) {
       var content = JSON.parse(this.responseText);
-      console.log(content.answer);
-      content = content.answer;
-      content = content.replace(/<br>/g, "\n");
-      var result = md.render(content);
-      console.log(result);
+      console.log(content);
+      if (this.status != 200) {
+        alert("Something went wrong. Please try again later.");
+      } else {
+        console.log(content.answer);
+        content = content.answer;
+        content = content.replace(/<br>/g, "\n");
+        var result = md.render(content);
+        console.log(result);
 
-      document.getElementById("searchResults").innerHTML = result;
+        document.getElementById("searchResults").innerHTML = result;
 
-      document.getElementById("searchResults").classList.toggle("hidden");
-      document.getElementById("searchLoader").classList.toggle("hidden");
+        document.getElementById("searchResults").classList.toggle("hidden");
+        document.getElementById("searchLoader").classList.toggle("hidden");
+      }
     }
   });
 
