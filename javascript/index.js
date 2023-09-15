@@ -53,8 +53,8 @@ function fetchSearchData(query) {
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === this.DONE) {
       var content = JSON.parse(this.responseText);
-      console.log(content.result.answer);
-      content = content.result.answer;
+      console.log(content.answer);
+      content = content.answer;
       content = content.replace(/<br>/g, "\n");
       var result = md.render(content);
       console.log(result);
